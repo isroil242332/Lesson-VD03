@@ -1,0 +1,182 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мои дети</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Мои дети</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Основной контент -->
+  <main class="my-4">
+    <div class="container">
+      <!-- Секция 1: Слайдер -->
+      <section class="mb-5">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="общ1.jpg" class="d-block w-30" alt="Фото 1">
+            </div>
+            <div class="carousel-item">
+              <img src="общ2.jpg" class="d-block w-50" alt="Фото 2">
+            </div>
+            <div class="carousel-item">
+              <img src="общ3.jpg" class="d-block w-50" alt="Фото 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Секция 2: Карточки -->
+      <section class="mb-5">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+
+
+<img src="Абдуссамад.jpg" class="card-img-top" alt="Карточка 1">
+              <div class="card-body">
+                <h5 class="card-title">Карточка 1</h5>
+                <p class="card-text">Алиев Абдуссамад.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <img src="Музаммил.jpg" class="card-img-top" alt="Карточка 2">
+              <div class="card-body">
+                <h5 class="card-title">Карточка 2</h5>
+                <p class="card-text">Алиев Саидмузаммил.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <img src="Ёсамин.jpg" class="card-img-top" alt="Карточка 3">
+              <div class="card-body">
+                <h5 class="card-title">Карточка 3</h5>
+                <p class="card-text">Алиева Ёсамин.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция 3: Аккордеон -->
+      <section class="mb-5">
+        <div class="accordion" id="infoAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <style>
+  .accordion-button.btn-primary {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+  }
+  .accordion-button.btn-primary:hover {
+    background-color: #00FA9A;
+  }
+</style>
+              <button class="accordion-button btn-primary"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                Алиев Абдуссамад.
+
+              </button>
+
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#infoAccordion">
+              <div class="accordion-body">
+                Email: abdu2332@gmail.com
+                Дата рождения: 30.03.2012
+                Город: Душанбе.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+
+              <button class="accordion-button bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                Алиев Саидмузаммил
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+              <div class="accordion-body">
+                Email: said4112@gmail.com
+                Дата рождения: 25.10.2013
+                Город: Душанбе.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                Алиева Ёсамин
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#infoAccordion">
+              <div class="accordion-body">
+
+                Email: yosamin2222@gmail.com
+                Дата рождения: 26.11.2018
+                Город: Душанбе.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Футер -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5>Контакты</h5>
+          <p>г. Пример, ул. Улица, д. 1<br>Тел.: +7 (123) 456-78-90<br>Email: info@example.com</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5>Мы в соцсетях</h5>
+          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i> Instagram</a>
+          <a href="#" class="text-white"><i class="bi bi-telegram"></i> Telegram</a>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        &copy; 2025 Мои дети
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Для иконок Bootstrap (опционально) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</body>
+</html>
